@@ -23,4 +23,5 @@ public interface IUserService {
      * @param idUser
      */
     public void deleteUserById(Long idUser);
+    
 }

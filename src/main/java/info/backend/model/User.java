@@ -6,6 +6,7 @@
 
 package info.backend.model;
 
+import io.leangen.graphql.annotations.GraphQLQuery;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -23,11 +24,14 @@ public class User {
     @Column(name = "id_user")
     @Getter
     @Setter
+    @GraphQLQuery(name = "idUser", description = "A user's id")
     private Long idUser;
     @Getter
     @Setter
+    @GraphQLQuery(name = "firstName", description = "A user's First Name")
     private String firstName;
     @Getter
     @Setter
+    @GraphQLQuery(name = "lastName", description = "A user's Last Name")
     private String lastName;
 }
